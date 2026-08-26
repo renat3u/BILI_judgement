@@ -16,14 +16,16 @@
                 "SESSDATA": "xxxxx",
                 "bili_jct": "xxxxx",
                 "DedeUserID": "xxxxx"
-            }
+            },
+            "refresh_token": "xxxxx"  // 自动续期用，运行 python login.py 扫码登录会自动写入；手动填则对应浏览器 localStorage 的 ac_time_value，留空则无法自动续期
         },
         {
             "cookieDatas": {  // 账号二
                 "SESSDATA": "xxxxx",
                 "bili_jct": "xxxxx",
                 "DedeUserID": "xxxxx"
-            }
+            },
+            "refresh_token": "xxxxx"
         }
     ],
     "push": {  // 推送

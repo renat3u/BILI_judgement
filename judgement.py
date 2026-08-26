@@ -528,6 +528,13 @@ async def start(user: dict,
 
 
 async def main(configData):
+    try:
+        from bili_cookie import maintain_cookies
+        await maintain_cookies(configData)  # 续期cookie+补齐设备cookie，就地更新configData
+    except Exception as er:
+        logging.warning(f'【Cookie】维护流程异常，沿用现有cookie继续：{er}')
+        if _debug:
+            traceback.print_exc()
     await asyncio.wait([asyncio.ensure_future(start(user=user, configData=configData)) for user in configData["users"]])
 
 

@@ -15,7 +15,8 @@
                 "SESSDATA": "xxxxx",
                 "bili_jct": "xxxxx",
                 "DedeUserID": "xxxxx"
-            }
+            },
+            "refresh_token": "xxxxx"
         }
     ],
     "push": {
